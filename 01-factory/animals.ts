@@ -23,13 +23,13 @@ abstract class AnimalFactory {
 }
 
 // dog interface
-interface Dog extends Animal {
+interface DogInterface extends Animal {
   bark(): string;
   fetch(): string;
 }
 
 // dog implementation
-class Dog implements Dog {
+class Dog implements DogInterface {
   public makeSound(): string {
     return "Woof!";
   }
@@ -66,12 +66,12 @@ class DogFactory extends AnimalFactory {
 }
 
 // eagle interface
-interface Eagle extends Animal {
+interface EagleInterface extends Animal {
   sharpenTalons(): string;
 }
 
 // eagle implementation
-class Eagle implements Eagle {
+class Eagle implements EagleInterface {
   public makeSound(): string {
     return "Screech!";
   }
@@ -105,13 +105,13 @@ class EagleFactory extends AnimalFactory {
 }
 
 // dolphin interface
-interface Dolphin extends Animal {
+interface DolphinInterface extends Animal {
   click(): string;
   jumpFromWater(): string;
 }
 
 // dolphin implementation
-class Dolphin implements Dolphin {
+class Dolphin implements DolphinInterface {
   public makeSound(): string {
     return "Click!";
   }
