@@ -31,3 +31,8 @@ const samsungFactory = new SamsungFactory();
 const samsungTablet = samsungFactory.createTablet();
 console.log(samsungTablet.watchVideo()); // Watching video on Galaxy Tab
 ```
+
+## Referência
+
+Para uma explicação completa, consulte:
+[Refactoring.Guru — Factory Method](https://refactoring.guru/pt-br/design-patterns/factory-method)
